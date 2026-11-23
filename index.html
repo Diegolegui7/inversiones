@@ -162,6 +162,20 @@ h2{font-size:clamp(28px,4.2vw,42px);text-align:center;margin-bottom:14px}
 
 footer{border-top:1px solid var(--borde);padding:36px 0 110px;color:#7d968a;font-size:13px;text-align:center}
 footer p{max-width:760px;margin:0 auto 10px}
+footer a{color:#a7bdb0}
+.btn-arrep{display:inline-block;margin:6px 0 14px;padding:10px 18px;border:1px solid var(--oro);color:var(--oro);background:transparent;border-radius:8px;font:700 14px Inter,sans-serif;cursor:pointer}
+.legal-links button{background:none;border:0;color:#a7bdb0;text-decoration:underline;font:inherit;cursor:pointer;padding:0}
+dialog.legal{position:fixed;inset:0;margin:auto;max-width:none;width:min(720px,calc(100vw - 32px));max-height:85vh;overflow-y:auto;border:1px solid var(--borde);border-radius:14px;background:var(--bg2);color:var(--txt);padding:28px 24px;text-align:left}
+dialog.legal::backdrop{background:rgba(0,0,0,.7)}
+dialog.legal h3{font-family:'Playfair Display',Georgia,serif;font-size:24px;margin-bottom:6px}
+dialog.legal h4{font-size:15px;margin:18px 0 6px;color:var(--oro)}
+dialog.legal p,dialog.legal li{font-size:14px;color:#c9d6cf;margin-bottom:8px}
+dialog.legal ul{padding-left:20px}
+dialog.legal .cerrar{float:right;background:none;border:0;color:var(--txt);font-size:26px;cursor:pointer;line-height:1}
+dialog.legal label{display:block;font-size:13px;margin:10px 0 4px;color:#c9d6cf}
+dialog.legal input,dialog.legal textarea{width:100%;padding:10px;border-radius:8px;border:1px solid var(--borde);background:var(--bg);color:var(--txt);font:14px Inter,sans-serif}
+dialog.legal .enviar{margin-top:14px;padding:12px 20px;border:0;border-radius:8px;background:var(--verde);color:#04140b;font:800 15px Inter,sans-serif;cursor:pointer}
+dialog.legal .chico{font-size:12px;color:#7d968a}
 
 /* CTA fija en móvil */
 .fija{position:fixed;left:0;right:0;bottom:0;background:rgba(7,19,13,.95);backdrop-filter:blur(8px);border-top:1px solid var(--borde);padding:10px 16px;display:none;z-index:50;align-items:center;gap:12px}
@@ -191,7 +205,7 @@ footer p{max-width:760px;margin:0 auto 10px}
 <header class="hero">
   <div class="cont hero-grid">
     <div>
-      <span class="etiqueta"><span class="punto"></span>EBOOK 2026 · 40 PÁGINAS · 6 GRÁFICOS DE WALL STREET</span>
+      <span class="etiqueta"><span class="punto"></span>EBOOK 2026 · 51 PÁGINAS · 6 GRÁFICOS DE WALL STREET</span>
       <h1>Aprendé a invertir con las ideas de los <span class="oro">grandes inversores</span>, aunque empieces de cero</h1>
       <p class="lead">El método simple que usan Warren Buffett, Benjamin Graham y John Bogle, explicado en lenguaje claro y adaptado a quien invierte desde Argentina y Latinoamérica.</p>
       <div class="nombres"><span>Warren Buffett</span><span>Benjamin Graham</span><span>Charlie Munger</span><span>John Bogle</span><span>Peter Lynch</span><span>Ray Dalio</span></div>
@@ -199,7 +213,7 @@ footer p{max-width:760px;margin:0 auto 10px}
       <div class="cuenta-tit">⏳ LA OFERTA TERMINA EN</div>
       <div class="cuenta" data-cuenta></div>
       <a class="cta link-pago" href="#">Quiero mi ebook ahora</a>
-      <div class="sellos"><span>🔒 Pago seguro</span><span>⚡ Descarga inmediata</span><span>💳 Mercado Pago</span></div>
+      <div class="sellos"><span>🔒 Pago seguro</span><span>⚡ Descarga inmediata</span><span>💳 Pago procesado por Hotmart</span></div>
     </div>
     <div>
       <div class="libro-esc">
@@ -387,7 +401,7 @@ footer p{max-width:760px;margin:0 auto 10px}
     <h2>¿Cómo <span class="oro">funciona</span>?</h2>
     <p class="sub">En menos de 5 minutos lo tenés en tu celular.</p>
     <div class="grid g4">
-      <div class="paso"><div class="n">1</div><h3>Comprás</h3><p style="color:var(--suave)">Pagás de forma segura con Mercado Pago.</p></div>
+      <div class="paso"><div class="n">1</div><h3>Comprás</h3><p style="color:var(--suave)">Pagás de forma segura a través de Hotmart.</p></div>
       <div class="paso"><div class="n">2</div><h3>Recibís</h3><p style="color:var(--suave)">Te llega el ebook por mail al instante.</p></div>
       <div class="paso"><div class="n">3</div><h3>Leés</h3><p style="color:var(--suave)">Desde el celu, la tablet o la compu.</p></div>
       <div class="paso"><div class="n">4</div><h3>Aplicás</h3><p style="color:var(--suave)">Seguís el plan de 7 pasos y empezás.</p></div>
@@ -420,7 +434,7 @@ footer p{max-width:760px;margin:0 auto 10px}
     <div class="precio" style="justify-content:center"><span class="antes precio-antes"></span><span class="ahora precio-ahora"></span></div>
     <div class="cuenta" data-cuenta></div>
     <a class="cta link-pago" href="#">Acceder al ebook ahora</a>
-    <div class="sellos"><span>🔒 Pago seguro</span><span>⚡ Descarga inmediata</span><span>💳 Mercado Pago</span></div>
+    <div class="sellos"><span>🔒 Pago seguro</span><span>⚡ Descarga inmediata</span><span>💳 Pago procesado por Hotmart</span></div>
   </div>
 </section>
 
@@ -429,9 +443,64 @@ footer p{max-width:760px;margin:0 auto 10px}
     <p><b>Invertir con Cabeza</b> · Ebook educativo</p>
     <p>Este material tiene fines exclusivamente educativos y no constituye asesoramiento financiero ni una recomendación de compra o venta de ningún activo. Toda inversión implica riesgos y los rendimientos pasados no garantizan resultados futuros. Operá solo a través de intermediarios autorizados por la CNV o el regulador de tu país.</p>
     <p>Las marcas y nombres de empresas e inversores se mencionan con fines informativos y no implican relación ni aval.</p>
-    <p>© <span id="anio"></span> Invertir con Cabeza · <a href="#" style="color:#7d968a">Términos</a> · <a href="#" style="color:#7d968a">Privacidad</a> · <a href="#" style="color:#7d968a">Contacto</a></p>
+    <button class="btn-arrep" data-abrir="dlg-arrep">Botón de arrepentimiento</button>
+    <p>Vendedor: Diego Nahuel Leguizamon Lentz · CUIT 20-94437556-3 · Ciudad Autónoma de Buenos Aires, Argentina · Contacto: <a href="mailto:kydiecorporacion@gmail.com">kydiecorporacion@gmail.com</a></p>
+    <p class="legal-links">© <span id="anio"></span> Invertir con Cabeza · <button data-abrir="dlg-terminos">Términos y condiciones</button> · <button data-abrir="dlg-privacidad">Política de privacidad</button> · <a href="mailto:kydiecorporacion@gmail.com">Contacto</a></p>
+    <p><a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank" rel="noopener">Defensa de las y los Consumidores. Para reclamos ingrese aquí</a></p>
   </div>
 </footer>
+
+<!-- TÉRMINOS -->
+<dialog class="legal" id="dlg-terminos">
+  <button class="cerrar" aria-label="Cerrar">×</button>
+  <h3>Términos y condiciones</h3>
+  <p class="chico">Última actualización: 23 de noviembre de 2026</p>
+  <h4>1. Quién vende</h4>
+  <p>El ebook "Invertir con cabeza" es vendido por Diego Nahuel Leguizamon Lentz, CUIT 20-94437556-3, con domicilio en la Ciudad Autónoma de Buenos Aires, Argentina. Contacto: kydiecorporacion@gmail.com.</p>
+  <h4>2. El producto</h4>
+  <p>Es un libro digital en formato PDF, de 51 páginas, con contenido educativo sobre inversiones. No es un producto físico: no hay envío.</p>
+  <h4>3. Precio y pago</h4>
+  <p>El precio publicado está expresado en pesos argentinos e incluye todos los cargos del vendedor. El pago se procesa a través de la plataforma Hotmart, que aplica sus propios términos y medios de pago. Los datos de tu tarjeta los gestiona Hotmart; el vendedor no tiene acceso a ellos.</p>
+  <h4>4. Entrega</h4>
+  <p>Una vez aprobado el pago, Hotmart te envía por mail el acceso para descargar el PDF. Si no lo recibís, revisá la carpeta de spam o escribinos.</p>
+  <h4>5. Garantía y derecho de arrepentimiento</h4>
+  <p>Tenés <span class="dias-garantia"></span> días corridos desde la compra para pedir la devolución total del dinero, sin necesidad de explicar el motivo. Además, de acuerdo con el artículo 34 de la Ley 24.240 de Defensa del Consumidor, podés revocar la compra dentro de los 10 días corridos usando el Botón de arrepentimiento de esta página, sin costo ni responsabilidad alguna.</p>
+  <h4>6. Uso del contenido</h4>
+  <p>La compra te da una licencia personal para leer el ebook. No está permitido revenderlo, compartirlo públicamente ni reproducirlo total o parcialmente sin autorización.</p>
+  <h4>7. Aviso importante</h4>
+  <p>El contenido es exclusivamente educativo y no constituye asesoramiento financiero, legal ni impositivo, ni una recomendación de compra o venta de ningún activo. Toda inversión implica riesgos, incluida la pérdida del capital, y los rendimientos pasados no garantizan resultados futuros. Antes de invertir, consultá con un asesor matriculado y operá solo con intermediarios registrados en la CNV.</p>
+  <h4>8. Ley aplicable</h4>
+  <p>Estos términos se rigen por las leyes de la República Argentina. Ante cualquier reclamo podés escribirnos o acudir a Defensa del Consumidor.</p>
+</dialog>
+
+<!-- PRIVACIDAD -->
+<dialog class="legal" id="dlg-privacidad">
+  <button class="cerrar" aria-label="Cerrar">×</button>
+  <h3>Política de privacidad</h3>
+  <p class="chico">Última actualización: 23 de noviembre de 2026</p>
+  <h4>Qué datos se recolectan</h4>
+  <p>Esta página no usa formularios de registro ni cookies de seguimiento. Cuando comprás, tus datos (nombre, mail, documento y datos de pago) los recolecta Hotmart para procesar el pago y entregarte el producto, según su propia política de privacidad. El vendedor recibe de Hotmart tu nombre y mail para poder darte soporte y emitir la factura.</p>
+  <h4>Para qué se usan</h4>
+  <ul><li>Entregarte el ebook y darte soporte.</li><li>Emitir la factura correspondiente.</li><li>Responder consultas o pedidos de devolución.</li></ul>
+  <p>Tus datos no se venden ni se comparten con terceros para publicidad.</p>
+  <h4>Tus derechos</h4>
+  <p>Según la Ley 25.326 de Protección de Datos Personales, podés pedir acceso, corrección o eliminación de tus datos escribiendo a kydiecorporacion@gmail.com. La Agencia de Acceso a la Información Pública, órgano de control de esa ley, atiende las denuncias por incumplimiento.</p>
+</dialog>
+
+<!-- ARREPENTIMIENTO -->
+<dialog class="legal" id="dlg-arrep">
+  <button class="cerrar" aria-label="Cerrar">×</button>
+  <h3>Botón de arrepentimiento</h3>
+  <p>Podés revocar tu compra dentro de los 10 días corridos desde que la hiciste, sin costo y sin dar explicaciones (art. 34, Ley 24.240 y Resolución 424/2020). Completá estos datos y te respondemos por mail dentro de las 24 horas con el código de identificación de tu solicitud.</p>
+  <form id="form-arrep">
+    <label for="ar-nombre">Nombre y apellido</label><input id="ar-nombre" required>
+    <label for="ar-mail">Mail con el que compraste</label><input id="ar-mail" type="email" required>
+    <label for="ar-compra">Número de compra de Hotmart (opcional, figura en el mail de la compra)</label><input id="ar-compra">
+    <label for="ar-fecha">Fecha de la compra</label><input id="ar-fecha" type="date" required>
+    <button class="enviar" type="submit">Solicitar la devolución</button>
+  </form>
+  <p class="chico">Al tocar el botón se abre tu aplicación de correo con el pedido ya escrito, dirigido a kydiecorporacion@gmail.com. También podés pedir el reembolso directamente desde tu cuenta de Hotmart, en "Mis compras".</p>
+</dialog>
 
 <div class="fija"><span class="p precio-ahora"></span><a class="cta link-pago" href="#">Quiero el ebook</a></div>
 
@@ -453,6 +522,19 @@ document.querySelectorAll('.precio-antes').forEach(e => e.textContent = CONFIG.p
 document.querySelectorAll('.pct-off').forEach(e => e.textContent = CONFIG.porcentajeOff);
 document.querySelectorAll('.dias-garantia').forEach(e => e.textContent = CONFIG.diasGarantia);
 document.getElementById('anio').textContent = new Date().getFullYear();
+
+// Ventanas legales
+document.querySelectorAll('[data-abrir]').forEach(b => b.addEventListener('click', () => document.getElementById(b.dataset.abrir).showModal()));
+document.querySelectorAll('dialog.legal').forEach(d => {
+  d.querySelector('.cerrar').addEventListener('click', () => d.close());
+  d.addEventListener('click', e => { if (e.target === d) d.close(); });
+});
+document.getElementById('form-arrep').addEventListener('submit', e => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const cuerpo = `Solicito revocar mi compra del ebook "Invertir con cabeza" (Botón de arrepentimiento, art. 34 Ley 24.240).\n\nNombre: ${v('ar-nombre')}\nMail de compra: ${v('ar-mail')}\nNúmero de compra Hotmart: ${v('ar-compra') || '-'}\nFecha de compra: ${v('ar-fecha')}`;
+  location.href = 'mailto:kydiecorporacion@gmail.com?subject=' + encodeURIComponent('Botón de arrepentimiento - Invertir con cabeza') + '&body=' + encodeURIComponent(cuerpo);
+});
 
 // Cuenta regresiva hasta una fecha real (no se reinicia al recargar)
 const fin = new Date(CONFIG.finOferta).getTime();
